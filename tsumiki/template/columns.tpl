@@ -1,7 +1,7 @@
 <div class="columns{{ column_count }}">
-  {% for p in paragraph %}
-    <div class="col{{ loop.index }}">
-    {{ p }}
+  {% for section in sections %}
+    <div id="col{{ loop.index }}">
+    {{ section }}
     </div>
   {% endfor %}
-</div>
+</div> 
