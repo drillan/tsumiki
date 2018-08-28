@@ -4,8 +4,6 @@ from collections import OrderedDict
 from itertools import groupby
 
 import markdown
-from IPython import display
-from IPython.core.magic import Magics, cell_magic, magics_class
 from jinja2 import Environment, FileSystemLoader
 from mdx_gfm import GithubFlavoredMarkdownExtension
 
@@ -139,13 +137,7 @@ class Section:
         self.section_dict[id_] = source
 
 
-@magics_class
-class TsumikiMagic(Magics):
-    @cell_magic
-    def tsumiki(self, line=None, cell=None):
-        tsumiki = Tsumiki(cell)
-        return display.HTML(tsumiki.html)
-
-
 def load_ipython_extension(ipython):
+    from . magic import TsumikiMagic
+
     ipython.register_magics(TsumikiMagic)
