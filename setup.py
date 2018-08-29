@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="tsumiki",
-    version="0.0.1a",
+    version="0.0.1a1",
     url="https://github.com/drillan/tsumiki",
     author="driller",
     description="Jupyter(IPython) cell magic for display multiple columns [Markdown/HTML].",
