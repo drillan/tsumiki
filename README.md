@@ -1,6 +1,7 @@
 # tsumiki
 
-Write with Markdown and HTML mixdely. Display multiple columns.
+Write with Markdown and HTML mixdely.  
+Can lay out in multiple columns.
 
 # Install
 
