@@ -21,7 +21,7 @@ def Markdown(source):
 class Tsumiki:
     template_dir = os.path.join(os.path.abspath(os.path.dirname(__file__)), "template")
     env = Environment(loader=FileSystemLoader(template_dir, encoding="utf8"))
-    article_tpl = env.get_template("article.tpl")
+    section_tpl = env.get_template("section.tpl")
     column_style_tpl = env.get_template("column_style.tpl")
     columns_style_tpl = env.get_template("columns_style.tpl")
     columns_tpl = env.get_template("columns.tpl")
@@ -32,8 +32,8 @@ class Tsumiki:
         self.section_html_list = [
             self.render_to_html(x) for x in self.section_dict.values()
         ]
-        article = "\n".join(self.section_html_list)
-        self.html = self.article_tpl.render({"article": article})
+        section_html = "\n".join(self.section_html_list)
+        self.html = self.section_tpl.render({"section": section_html})
 
     def is_section_header(self, n, line):
         return bool(self.section_pattern.match(line)) * n
