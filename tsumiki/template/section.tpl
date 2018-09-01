@@ -1,3 +1,3 @@
-<section class="tsumiki">
+<div class="tsumiki">
   {{ section }}
-</section>
+</div>
