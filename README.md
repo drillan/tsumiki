@@ -11,4 +11,5 @@ pip install tsumiki
 
 # Usage
 
-See [examples](http://nbviewer.jupyter.org/github/drillan/tsumiki/blob/master/examples/Tutorial.ipynb).
+* [Tutorial](http://nbviewer.jupyter.org/github/drillan/tsumiki/blob/master/examples/Tutorial.ipynb)
+* [With Jinja2](http://nbviewer.jupyter.org/github/drillan/tsumiki/blob/master/examples/jinja2_template.ipynb)
