@@ -74,8 +74,7 @@ class Tsumiki:
     def render_to_html(self, data):
         column = data[0][0]["column"]
         if column == 1:
-            html = self._render_to_html(data[0])
-            source = f"<div>{html}</div>"
+            source = self._render_to_html(data[0])
             style = self.column_style_tpl.render()
             return "\n".join((style, source))
         elif column > 1:
