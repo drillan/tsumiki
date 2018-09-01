@@ -1,7 +1,7 @@
-<div class="columns{{ column_count }}">
+<section class="columns{{ column_count }}">
   {% for section in sections %}
-    <div id="col{{ loop.index }}">
+    <section id="col{{ loop.index }}">
     {{ section }}
-    </div>
+    </section>
   {% endfor %}
-</div> 
+</section> 
