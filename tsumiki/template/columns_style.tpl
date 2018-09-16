@@ -1,4 +1,7 @@
 <style>
+  .tsumiki {
+      width: 100%;
+  }
   .tsumiki .columns{{ column_count }} {
     -webkit-columns: {{ column_count }};
     -moz-columns: {{ column_count }};
