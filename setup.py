@@ -8,7 +8,7 @@ def read_file(filename):
 
 setup(
     name="tsumiki",
-    version="0.0.2a",
+    version="0.0.2",
     url="https://github.com/drillan/tsumiki",
     author="driller",
     description="tsumiki is a markup language to process multiple columns.",
