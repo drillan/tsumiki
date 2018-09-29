@@ -18,7 +18,7 @@ def convert_to_html(input_path):
 
 @click.command()
 @click.argument("input_path", type=click.Path(exists=True))
-@click.argument("output_path", type=click.Path(exists=True))
+@click.argument("output_path", required=False)
 def tsumiki(input_path, output_path=None):
     click.echo(input_path)
     filename = click.format_filename(input_path, shorten=True)
