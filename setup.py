@@ -8,13 +8,13 @@ def read_file(filename):
 
 setup(
     name="tsumiki",
-    version="0.0.2",
+    version="0.0.3a",
     url="https://github.com/drillan/tsumiki",
     author="driller",
     description="tsumiki is a markup language to process multiple columns.",
     long_description=read_file('README.rst'),
     python_requires=">=3.6",
-    install_requires=["markdown", "py-gfm", "jinja2", "jinja2schema", "Click"],
+    install_requires=["markdown<3.0", "py-gfm", "jinja2", "jinja2schema", "Click"],
     license="MIT",
     packages=find_packages(),
     include_package_data=True,
